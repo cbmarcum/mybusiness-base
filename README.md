@@ -14,7 +14,7 @@ Based on instructions from from: [https://docs.docker.com/get-started/part2/](Do
 
 Build the temp image (make sure to replace the version with the new one).
 ```bash
-$ docker build --tag=mybusiness-base:X.X.X .
+$ docker build --tag=mybusiness-temp:X.X.X .
 ```
 
 tag the official one for docker hub
