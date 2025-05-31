@@ -4,7 +4,7 @@ A Docker base image for MyBusiness based web applications.
 The home for these images is: 
 [Docker Hub MyBusiness-Base](https://cloud.docker.com/repository/docker/cbmarcum/mybusiness-base "MyBusiness-Base on Ducker Hub")
 
-The image is built on Amazon's Corretta JDK 8 image with Apache OpenOffice installed.
+The image is built on Amazon's Corretta JDK 11.0.27 image with Apache OpenOffice 4.1.15 installed.
 
 ## Building the image
 
@@ -12,12 +12,12 @@ Based on instructions from from: [Docker get-started part 2](https://docs.docker
 
 Build the temp image (make sure to replace the version with the new one).
 ```bash
-$ docker build --tag=mybusiness-temp:X.X.X .
+$ docker build --tag=mybusiness-temp:0.4.0 .
 ```
 
 tag the official one for docker hub
 ```bash
-$ docker tag mybusiness-temp:X.X.X cbmarcum/mybusiness-base:X.X.X
+$ docker tag mybusiness-temp:0.4.0 cbmarcum/mybusiness-base:0.4.0
 ```
 
 Login to docker hub
@@ -27,7 +27,7 @@ $ docker login
 
 Push the image
 ```bash
-$ docker push cbmarcum/mybusiness-base:X.X.X
+$ docker push cbmarcum/mybusiness-base:0.4.0
 ```
 
 Delete local temp image
