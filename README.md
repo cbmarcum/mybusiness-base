@@ -4,7 +4,7 @@ A Docker base image for MyBusiness based web applications.
 The home for these images is: 
 [Docker Hub MyBusiness-Base](https://cloud.docker.com/repository/docker/cbmarcum/mybusiness-base "MyBusiness-Base on Ducker Hub")
 
-The image is built on Amazon's Corretta JDK 8 image with Apache OpenOffice installed.
+The image is built on Amazon's Corretta JDK 11.0.27 image with Apache OpenOffice 4.1.15 installed.
 
 ## Building the image
 
