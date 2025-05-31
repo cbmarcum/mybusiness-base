@@ -12,12 +12,12 @@ Based on instructions from from: [Docker get-started part 2](https://docs.docker
 
 Build the temp image (make sure to replace the version with the new one).
 ```bash
-$ docker build --tag=mybusiness-temp:X.X.X .
+$ docker build --tag=mybusiness-temp:0.4.0 .
 ```
 
 tag the official one for docker hub
 ```bash
-$ docker tag mybusiness-temp:X.X.X cbmarcum/mybusiness-base:X.X.X
+$ docker tag mybusiness-temp:0.4.0 cbmarcum/mybusiness-base:0.4.0
 ```
 
 Login to docker hub
@@ -27,7 +27,7 @@ $ docker login
 
 Push the image
 ```bash
-$ docker push cbmarcum/mybusiness-base:X.X.X
+$ docker push cbmarcum/mybusiness-base:0.4.0
 ```
 
 Delete local temp image
